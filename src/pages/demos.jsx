@@ -30,7 +30,7 @@ function HeaderStarts(){
 
 function Header(){
     return(
-        <header className="w-full h-[300px] md:h-[240px] lg:h-[170px] bg-[#f8f9fa] py-[30px] px-[20px] content-start">
+        <header className="w-full h-[300px] relative md:h-[240px] lg:h-[170px] bg-[#f8f9fa] py-[30px] px-[20px] content-start">
             <div className="w-full  h-[180px] sm:h-[150px] lg:h-[90px] flex flex-wrap justify-center md:justify-between items-center">
                 <figure>
                     <a href=""><img src={Logo} alt="" /></a>
@@ -47,7 +47,17 @@ function Header(){
                 </section>
             </div>
             <div className="w-full bg-[#ffffff] h-[70px] sm:h-[90px] lg:h-[90px] relative z-10">
-                <section className='w-full h-full border text-center lg:hidden'>SM</section>
+                {/* __________________**********Phone-Menu***************______________ */}
+                <section className='w-full h-full border text-center lg:hidden flex justify-between items-center pl-[20px]'>
+                    <span className='flex w-[60px] h-[60px] cursor-pointer font-bold text-[25px] bg-[#f89221] text-white justify-center items-center '>///</span>
+                    <a href="" className='flex h-full w-[290px] bg-[#f89221] justify-center items-center relative
+                     capitalize text-[25px] text-white group whitespace-nowrap'>
+                        <p className='z-10'>free join us</p>
+                        <span className='flex w-0 h-full absolute top-0 left-0 bg-[#f05c72] duration-500 group-hover:w-full'></span>
+                    </a>
+
+                </section>
+
                 <section className='w-full h-full  text-center hidden lg:flex justify-between shadow-md'>
                     <ul className='flex h-full '>
                         <li className='h-full relative group after:content-[""] after:h-0 after:w-[0%] after:border-2 after:border-[#f89221] after:absolute after:bottom-0 
