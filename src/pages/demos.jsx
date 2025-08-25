@@ -1,4 +1,7 @@
 import Logo from '../assets/logo.svg'
+import TitleImg from '../assets/bPNG-removebg-preview.png'
+import AboutImg from '../assets/about-image-01.jpg'
+import AboutImg2 from '../assets/about-image-02.jpg'
 import '../App.css'
 export default function Demos(){
     return(
@@ -6,6 +9,8 @@ export default function Demos(){
             <HeaderStarts />
             <Header />
             <BannerHead />
+            <Academics />
+            <Liggeet  />
         </section>
     )
 }
@@ -123,6 +128,53 @@ function Header(){
 
 function BannerHead(){
     return(
-        <section className='w-full h-[110vh] bannerHead'></section>
+        <section className='w-full h-[110vh] bannerHead flex items-center'>
+            <div className='w-full p-[40px]'>
+                <strong className='text-white font-bold text-[25px]'>For A Better Future
+                    <img src={TitleImg} alt="" className='w-[270px]' />
+                </strong>
+                <h1 className='text-white text-[50px] md:text-[70px] font-bold md:w-[600px]'>To Learn About The World</h1>
+            </div>
+        </section>
+    )
+}
+
+
+
+function Academics(){
+    return(
+        <section className='w-full  mt-[300px] mb-[60px] flex flex-wrap justify-evenly'>
+            <div className='w-full md:w-[49%] lg:w-[32%]'>
+                <h3 className='font-bold text-[26px] duration-500 hover:text-[#F05C72] cursor-pointer roboto'>Affordability</h3>
+                <p className='my-[10px] roboto'>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
+            </div>
+            <div className='w-full md:w-[49%] lg:w-[32%]'>
+                <h3 className='font-bold text-[26px] duration-500 hover:text-[#F05C72] cursor-pointer roboto'>Academics</h3>
+                <p className='my-[10px] roboto'>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
+            </div>
+            <div className='w-full md:w-[49%] lg:w-[32%]'>
+                <h3 className='font-bold text-[26px] duration-500 hover:text-[#F05C72] cursor-pointer roboto'>Inspiring Student Life</h3>
+                <p className='my-[10px] roboto'>Sed gravida nisl a porta tincidunt. Integer aliquam. To the power.</p>
+            </div>
+        </section>
+    )
+}
+
+
+
+function Liggeet(){
+    return(
+        <section className='w-full  bg-[#d5d5d5] flex flex-wrap justify-evenly'>
+            <div className='w-full border lg:w-[45%] relative'>
+                <figure className='w-full h-[500px] overflow-hidden group rounded-[16px]'>
+                    <img src={AboutImg} alt="" className='w-full h-full duration-[2s]  group-hover:scale-[1.5] object-cover' />
+                </figure>
+                <section className='w-[310px] h-[310px] absolute 
+                    bottom-[-20%] right-[-25%] border-white border-[15px] opacity-0 lg:opacity-100 hidden lg:block group overflow-hidden'>
+                    <img src={AboutImg2} alt="" className='w-full h-full group-hover:scale-[1.2] duration-[2s]'  />
+                </section>
+            </div>
+            <div className='w-full border lg:w-[55%]'>Lorem ipsum dolor sit amet.</div>
+        </section>
     )
 }
