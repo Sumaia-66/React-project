@@ -18,6 +18,7 @@ export default function Demos() {
             <Laboratory />
             <Sessions />
             <Cards />
+            <StudetStadis />
         </section>
     )
 }
@@ -246,42 +247,42 @@ function Cards(){
         <section className='w-full min-h-[80vh] flex flex-wrap justify-between mb-96'>
             <figure className='w-full md:w-[49%] lg:w-[24%]  relative'> 
                 <img src={AboutImg11} alt="" className='w-full h-[90%] border object-cover' />
-                <figcaption className='w-[60%] h-[100px] overflow-hidden pt-7 bg-white flex flex-wrap text-center items-center absolute left-[20%] bottom-[30px] hover:h-[150px] duration-500 before:content-[""] before:block before:h-[70px] before:w-[3px] before:absolute
-                 before:top-[20%] before:left-0 before:bg-[#f05c72] group group-hover:before:w-[100px] after:content-[""]
-                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72]'>
+                <figcaption className='w-[60%] h-[100px] overflow-hidden pt-7 group bg-white flex flex-wrap text-center items-center absolute left-[20%] bottom-[30px] hover:h-[150px] duration-500 before:content-[""] before:block before:h-[70px] before:w-[3px] before:absolute
+                 before:top-[20%] before:left-0 before:bg-[#f05c72]  group-hover:before:w-[100px] after:content-[""]
+                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72] group-hover:after:scale-y-[10] after:duration-[.7s]'>
                     <a href="">
                         <strong className='w-full flex text-[20px] group-hover:text-[#f05c72] duration-700 text-[#2c3239]'>Continouing Education</strong>
                         <span className='flex justify-center translate-y-[50px] group-hover:translate-y-[5px] text-[#2c3239] group-hover:text-[#F89221] duration-700 ' >Read More</span>
                     </a>
                  </figcaption>
             </figure>
-            <figure className='w-full md:w-[49%] lg:w-[24%]  relative'> 
+            <figure className='w-full md:w-[49%] lg:w-[24%]  relative group'> 
                 <img src={AboutImg02} alt="" className='w-full h-[90%] border object-cover' />
                  <figcaption className='w-[60%] h-[100px] overflow-hidden pt-7 bg-white flex flex-wrap text-center items-center absolute left-[20%] bottom-[30px] hover:h-[150px] duration-500 before:content-[""] before:block before:h-[70px] before:w-[3px] before:absolute
-                 before:top-[20%] before:left-0 before:bg-[#f05c72] group group-hover:before:w-[100px] after:content-[""]
-                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72]'>
+                 before:top-[20%] before:left-0 before:bg-[#f05c72] group-hover:before:w-[100px] after:content-[""]
+                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72] group-hover:after:scale-y-[10] after:duration-[.7s]'>
                     <a href="">
                         <strong className='w-full flex text-[20px] group-hover:text-[#f05c72] duration-700 text-[#2c3239]'>Graduate Addmission</strong>
                         <span className='flex justify-center translate-y-[50px] group-hover:translate-y-[5px] text-[#2c3239] group-hover:text-[#F89221] duration-700 ' >Read More</span>
                     </a>
                  </figcaption>
             </figure>
-            <figure className='w-full md:w-[49%] lg:w-[24%] relative '> 
+            <figure className='w-full md:w-[49%] lg:w-[24%] relative group'> 
                 <img src={ProgramImg} alt="" className='w-full h-[90%] border object-cover' />
-                <figcaption className='w-[60%] h-[100px] overflow-hidden pt-7 bg-white flex flex-wrap text-center items-center absolute left-[20%] bottom-[30px] hover:h-[150px] duration-500 before:content-[""] before:block before:h-[70px] before:w-[3px] before:absolute
-                 before:top-[20%] before:left-0 before:bg-[#f05c72] group group-hover:before:w-[100px] after:content-[""]
-                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72]'>
+                <figcaption className='w-[60%] h-[100px]  overflow-hidden pt-7 bg-white flex flex-wrap text-center items-center absolute left-[20%] bottom-[30px] hover:h-[150px] duration-500 before:content-[""] before:block before:h-[70px] before:w-[3px] before:absolute
+                 before:top-[20%] before:left-0 before:bg-[#f05c72]  group-hover:before:w-[100px] after:content-[""]
+                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72] group-hover:after:scale-y-[10] after:duration-[.7s]'>
                     <a href="">
                         <strong className='w-full flex text-[20px] group-hover:text-[#f05c72] duration-700 text-[#2c3239]'>Ungraduate Addmission</strong>
                         <span className='flex justify-center translate-y-[50px] group-hover:translate-y-[5px] text-[#2c3239] group-hover:text-[#F89221] duration-700 ' >Read More</span>
                     </a>
                  </figcaption>
             </figure>
-            <figure className='w-full md:w-[49%] lg:w-[24%] relative'> 
+            <figure className='w-full md:w-[49%] lg:w-[24%] relative group'> 
                 <img src={ProgramImg4} alt="" className='w-full h-[90%] border object-cover' />
                 <figcaption className='w-[60%] h-[100px] overflow-hidden pt-7 bg-white flex flex-wrap text-center items-center absolute left-[20%] bottom-[30px] hover:h-[150px] duration-500 before:content-[""] before:block before:h-[70px] before:w-[3px] before:absolute
-                 before:top-[20%] before:left-0 before:bg-[#f05c72] group group-hover:before:w-[100px] after:content-[""]
-                 after:block after:h-[70px] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72]'>
+                 before:top-[20%] before:left-0 before:bg-[#f05c72]  group-hover:before:h-[100%] after:content-[""]
+                 after:block after:h-[60%] after:w-[3px] after:absolute after:top-[20%] after:right-0 after:bg-[#f05c72] group-hover:after:scale-y-[10] after:duration-[.7s]'>
                     <a href="">
                         <strong className='w-full flex text-[24px] group-hover:text-[#f05c72] duration-700 text-[#2c3239]'>Research at Liggeet</strong>
                         <span className='flex justify-center translate-y-[50px] group-hover:translate-y-[5px] text-[#2c3239] group-hover:text-[#F89221] duration-700 ' >Read More</span>
@@ -291,3 +292,53 @@ function Cards(){
         </section>
     )
 }
+
+
+
+function StudetStadis(){
+    return(
+        <section className='w-full'>
+            <div className='container mx-auto text-center'> 
+                    <span className='text-[#f05c72] font-bold'>Student stadies</span>
+                    <h3 className='font-bold text-[30px] my-[15px] relative after:content-[""] after:block
+                    after:w-[90px] after:h-0 after:border-2 after:border-[#333] after:absolute after:bottom-[-7px] after:left-[40px] mx-auto w-fit'>Our Studies</h3>
+                    <section className='w-full flex flex-wrap justify-evenly'>
+                        <div className="w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%]  p-[30px] mt-[40px] text-left relative group">
+                            <h3 className='font-bold'>Education</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                            <span className='block w-[10%] h-[10%] bg-[#f05c72] absolute top-[40%] left-0 group-hover:w-[100%] group-hover:h-[100%] duration-[.5s] group-hover:top-0 z-[-10]'></span>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>IT</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>Health Care</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>Economy</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>Architecture</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>Design</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>Engineering</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                        <div className='w-full md:w-1/2 lg:w-[33%] lg:h-[200px] xl:w-[25%] border-l p-[30px] mt-[40px] text-left'>
+                            <h3 className='font-bold'>Sciences</h3>
+                            <p>Sed gravida nisl a porta tincidunt. Integer aliquam.</p>
+                        </div>
+                    </section>
+            </div>
+        </section>
+    )
+}
+
